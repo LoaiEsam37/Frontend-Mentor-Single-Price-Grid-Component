@@ -1,0 +1,108 @@
+:root {
+    --body-background-color: #e6eff6;
+    --header-card-background-color: #ffffff;
+    --subscription-card-background-color: #2bb3b1;
+    --description-card-background-color: #4abebd;
+    --signup-button-background-color: #bfdf32;
+    --text-green-color: #b7cd51;
+    --text-blue-color: #3babac;
+    --space-between-elements: 44px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-background-color);
+    color: white;
+}
+
+.card {
+    display: grid;
+    width: 700px;
+    grid-template-rows: 200px;
+    grid-template-columns: 50% 50%;
+}
+
+.card__wrapper {
+    padding: var(--space-between-elements);
+}
+
+.card__container--header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--header-card-background-color);
+    color: black;
+}
+
+.card__container--subscription {
+    background-color: var(--subscription-card-background-color);
+}
+
+.card__container--description {
+    background-color: var(--description-card-background-color);
+}
+
+.card__container--header .card__title h1 {
+    color: var(--text-blue-color);
+    font-size: 25px;
+}
+
+.card__container--header .card_description span {
+    color: var(--text-green-color);
+    margin: 10px 0 10px 0;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__container--header .card_description p {
+    color: #c8ccd5;
+    margin-bottom: 10px;
+}
+
+
+.card__container--subscription .card__title h1 {
+    font-size: 20px;
+}
+
+.card__price {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+}
+
+.card__price span span {
+    font-size: 16px;
+    color: #86e5e9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--signup-button-background-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    font-weight: 700;
+    margin-top: 25px;
+
+}
+
+
+.card__container--description .card__title {
+    font-size: 10px;
+}
+
+.card__container--description .card__description {
+    padding: 10px 25px 10px 0;
+    color: #a9f7f7;
+}
